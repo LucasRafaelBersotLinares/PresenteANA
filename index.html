@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céu de Memórias ✨</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Lua -->
+    <div class="moon"></div>
+
+    <!-- Tela inicial -->
+    <section id="intro" class="intro">
+
+        <div class="card">
+
+            <h1> ⋆.˚ ☾⭒.˚ Caelum Memoriae ⋆.˚ ☾⭒.˚ </h1>
+
+            <p>
+                 ⋆˖⁺‧₊☽◯☾₊‧⁺˖⋆ Esse é o seu espaço. Cada estrela representa uma fagulha, um brilho de memória.  ⋆˖⁺‧₊☽◯☾₊‧⁺˖⋆<br>
+                 𓇼 ⋆.˚ 𓆉 𓆝 𓆡⋆.˚ 𓇼 Algo que você compartilhou com alguém, uma interação que se permitiu viver. 𓇼 ⋆.˚ 𓆉 𓆝 𓆡⋆.˚ 𓇼 <br>
+                 𓇼 ⋆.˚ 𓆉 𓆝 𓆡⋆.˚ 𓇼 Elas não mostram nem 1% das memórias que sei que outros guardam de você, e que você guarda deles. 𓇼 ⋆.˚ 𓆉 𓆝 𓆡⋆.˚ 𓇼 <br>
+                 ⋆.˚✮☽☯︎☾✮˚.⋆ Mas gostaria que visse, que juntando algumas delas, surge o melhor céu possível de se contemplar. ⋆.˚✮☽☯︎☾✮˚.⋆ <br>
+            </p>
+
+            <button id="startBtn">
+                Entrar neste céu? (Apenas aproveite, obs: abaixa o som do celular ou do fone ksksk).
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Céu -->
+    <section id="sky" class="hidden">
+
+        <div class="topbar">
+
+            <span id="counter"></span>
+
+            <button id="constBtn">
+                Mostrar Constelações
+            </button>
+
+        </div>
+
+        <!-- Canvas das constelações -->
+        <canvas id="canvas"></canvas>
+
+        <!-- Estrelas clicáveis -->
+        <div id="stars"></div>
+
+        <!-- Música -->
+        <div class="music">
+
+            <audio
+                id="bgm"
+                src="audio/MelhorEquipe.mp3"
+                loop>
+            </audio>
+
+        <select id="musicSelector">
+
+            <option value="audio/AlgoEspecial.mp3">
+                🎵 AlgoEspecial
+            </option>
+
+            <option value="audio/CinzaAndSangue.mp3">
+                🎵 CinzaAndSangue
+            </option>
+
+            <option value="audio/MelhorEquipe.mp3">
+                🎵 MelhorEquipe
+            </option>
+
+            <option value="audio/NuncaEsqueco.mp3">
+                🎵 NuncaEsqueco
+            </option>
+            
+            <option value="audio/Pessoas3(KKK).mp3">
+                🎵 Pessoas3(KKK)
+            </option>
+                        
+            <option value="audio/UmSerieNossa.mp3">
+                🎵 UmaSerieNossa!
+            </option>
+    </select>
+
+</div>
+
+    </section>
+
+    <!-- Modal da memória -->
+    <div id="modal" class="modal hidden">
+
+        <div class="modal-card">
+
+            <button id="closeBtn">
+                ✖
+            </button>
+
+            <img
+                id="mImg"
+                src=""
+                alt="Memória">
+
+            <h2 id="mTitle"></h2>
+
+            <small id="mDate"></small>
+
+            <p id="mDesc"></p>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
